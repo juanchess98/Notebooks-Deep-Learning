@@ -14,6 +14,6 @@ def crear_db(fn = lambda x: x, distribucion='normal', ruido=0.5, num_datos=100, 
 
     return (t, signal)
 
-def plot_data(eje_X, eje_Y):
-    plt.plot(eje_X, eje_Y, 'o', color='red')
+def plot_data(eje_X, eje_Y, label='grafica'):
+    plt.plot(eje_X, eje_Y, color='blue', label=label)
     plt.show() #(block=True)
